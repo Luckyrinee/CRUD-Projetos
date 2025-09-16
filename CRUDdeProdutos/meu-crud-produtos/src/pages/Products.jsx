@@ -26,4 +26,46 @@ export default function Products() {
             loadProducts();
         }
     };
+
+    return (
+        <div className="container mt-4">
+            <h2>Produtos</h2>
+            <Button className="mb-3" onClick={() => navigate("/products/new")}>
+                Novo Produto
+            </Button>
+            <table id="productsTable" className="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Ativo</th>
+                        <th>Criado em</th>
+                        <th>Atualizado em</th>
+                        <th>Acões</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {products.map(p => (
+                        <tr key={p.id}>
+                            <td>{p.id}</td>
+                            <td>{p.nome}</td>
+                            <td>R$ {p.preco.toFixed(2)}</td>
+                            <td>{p.ativo ? "Sim" : "Não"}</td>
+                            <td>{p.data_criacao}</td>
+                            <td>{p.data_atualizacao}</td>
+                            <td>
+                                <Button variant="warning" size="sm me-2" onClick={() => navigate(`/products/edit/${p.id}`)}>
+                                    <FaEdit /> 
+                                </Button>
+                                <Button variant="danger" size="sm" onClick={() => deleteProduct(p.id)}>
+                                    <FaTrash /> 
+                                </Button>
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    );
 }

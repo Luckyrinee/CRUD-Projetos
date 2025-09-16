@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "63fe",
+      "nome": "Dudu",
+      "preco": 1000,
+      "ativo": true,
+      "data_criacao": "2025-09-16",
+      "data_atualizacao": "2025-09-16"
+    },
+    {
+      "id": "d417",
+      "nome": "diud",
+      "preco": 0,
+      "ativo": true,
+      "data_criacao": "2025-09-16",
+      "data_atualizacao": "2025-09-16"
+    },
+    {
+      "id": "a609",
+      "nome": "Dudud",
+      "preco": 100,
+      "ativo": true,
+      "data_criacao": "2025-09-16",
+      "data_atualizacao": "2025-09-16"
+    },
+    {
+      "id": "98b3",
+      "nome": "asdfasda",
+      "preco": 10,
+      "ativo": true,
+      "data_criacao": "2025-09-16",
+      "data_atualizacao": "2025-09-16"
+    },
+    {
+      "id": "cf89",
+      "nome": "asdasd",
+      "preco": 123.12,
+      "ativo": true,
+      "data_criacao": "2025-09-16",
+      "data_atualizacao": "2025-09-16"
+    }
+  ]
+}
